@@ -1,0 +1,28 @@
+{
+  "name": "ContactMessage",
+  "type": "object",
+  "properties": {
+    "sender_name": {
+      "type": "string",
+      "description": "Name of the person sending the message"
+    },
+    "sender_email": {
+      "type": "string",
+      "description": "Email of the sender"
+    },
+    "message": {
+      "type": "string",
+      "description": "The message content"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the message has been read"
+    }
+  },
+  "required": [
+    "sender_name",
+    "sender_email",
+    "message"
+  ]
+}
