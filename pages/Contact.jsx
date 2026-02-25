@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MessageSquare } from "lucide-react";
-import ContactForm from "@/components/contact/ContactForm";
-import ContactInfo from "@/components/contact/ContactInfo";
+import ContactForm from "@/Components/contact/ContactForm";
+import ContactInfo from "@/Components/contact/ContactInfo";
 
 export default function Contact() {
   return (

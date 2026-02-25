@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Wrench } from "lucide-react";
-import SkillCard from "@/components/skills/SkillCard";
+import SkillCard from "@/Components/skills/SkillCard";
 
 const skills = [
   {

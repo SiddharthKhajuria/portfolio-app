@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { User, Briefcase } from "lucide-react";
-import EducationCard from "@/components/about/EducationCard";
+import EducationCard from "@/Components/about/EducationCard";
 
 const education = [
   {

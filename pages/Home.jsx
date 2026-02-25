@@ -1,6 +1,6 @@
 import React from "react";
-import HeroSection from "@/components/home/HeroSection";
-import QuickStats from "@/components/home/QuickStats";
+import HeroSection from "@/Components/home/HeroSection";
+import QuickStats from "@/Components/home/QuickStats";
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FolderOpen } from "lucide-react";
-import ProjectCard from "@/components/projects/ProjectCard";
+import ProjectCard from "@/Components/projects/ProjectCard";
 
 const projects = [
   {
