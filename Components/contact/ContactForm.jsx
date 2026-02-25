@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { base44 } from "@/api/base44Client";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ sender_name: "", sender_email: "", message: "" });
@@ -16,13 +15,11 @@ export default function ContactForm() {
     e.preventDefault();
     setSending(true);
 
-    await base44.entities.ContactMessage.create(form);
-
-    await base44.integrations.Core.SendEmail({
-      to: "siddharthkhajuria@gmail.com",
-      subject: `Portfolio Contact: ${form.sender_name}`,
-      body: `New message from your portfolio:\n\nName: ${form.sender_name}\nEmail: ${form.sender_email}\n\nMessage:\n${form.message}`,
-    });
+    const subject = encodeURIComponent(`Portfolio Contact: ${form.sender_name}`);
+    const body = encodeURIComponent(
+      `Name: ${form.sender_name}\nEmail: ${form.sender_email}\n\nMessage:\n${form.message}`
+    );
+    window.location.href = `mailto:siddharthkhajuria@gmail.com?subject=${subject}&body=${body}`;
 
     setSending(false);
     setSent(true);

@@ -1,9 +1,8 @@
 import React from "react";
-import profilePic from "../../assets/Sid.jpg";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Cloud, Server, GitBranch } from "lucide-react";
+import { ArrowRight, Cloud, Server, GitBranch } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
@@ -115,7 +114,7 @@ export default function HeroSection() {
               {/* Profile image container */}
               <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
-                  src={profilePic} // <-- use the imported profile picture here
+                  src="https://avatars.githubusercontent.com/u/175024674?v=4"
                   alt="Siddharth Khajuria"
                   className="w-full h-full object-cover"
                />

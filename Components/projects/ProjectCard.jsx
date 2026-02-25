@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, X, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { X, ArrowRight } from "lucide-react";
 
 export default function ProjectCard({ project, index }) {
   const [showModal, setShowModal] = useState(false);
