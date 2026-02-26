@@ -120,7 +120,7 @@ export default function HeroSection() {
                 <img
                   src={profileImage}
                   alt="Siddharth Khajuria"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_30%]"
                   onError={(event) => {
                     if (!event.currentTarget.dataset.fallbackTried) {
                       event.currentTarget.dataset.fallbackTried = "true";
