@@ -9,4 +9,3 @@ export function createPageUrl(pageName) {
 
   return map[pageName] || "/";
 }
-## 
