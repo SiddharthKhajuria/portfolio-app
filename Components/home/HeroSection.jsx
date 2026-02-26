@@ -6,6 +6,10 @@ import { ArrowRight, Cloud, Server, GitBranch } from "lucide-react";
 import { Button } from "@/Components/ui/button";
 
 export default function HeroSection() {
+  const baseUrl = import.meta.env.BASE_URL;
+  const profileImage = `${baseUrl}Sid.jpg`;
+  const profileImagePng = `${baseUrl}Sid.png`;
+
   return (
     <section className="relative min-h-[90vh] flex items-center animated-gradient overflow-hidden">
       {/* Decorative elements */}
@@ -114,9 +118,17 @@ export default function HeroSection() {
               {/* Profile image container */}
               <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
-                  src="https://avatars.githubusercontent.com/u/175024674?v=4"
+                  src={profileImage}
                   alt="Siddharth Khajuria"
                   className="w-full h-full object-cover"
+                  onError={(event) => {
+                    if (!event.currentTarget.dataset.fallbackTried) {
+                      event.currentTarget.dataset.fallbackTried = "true";
+                      event.currentTarget.src = profileImagePng;
+                      return;
+                    }
+                    event.currentTarget.src = "https://avatars.githubusercontent.com/u/175024674?v=4";
+                  }}
                />
               </div>
 
