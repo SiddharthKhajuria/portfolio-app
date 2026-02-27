@@ -151,7 +151,7 @@ export default function HeroSection() {
                 className="absolute -top-2 -left-4 bg-white rounded-2xl shadow-lg border border-slate-100 px-4 py-3"
               >
                 <div className="text-center">
-                  <p className="text-xl font-bold text-indigo-600">3+</p>
+                  <p className="text-xl font-bold text-indigo-600">4+</p>
                   <p className="text-[11px] text-slate-400 font-medium">Years Exp.</p>
                 </div>
               </motion.div>
