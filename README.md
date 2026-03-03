@@ -87,6 +87,3 @@ portfolio-app/
 ├── public/
 └── entities/
 ```
-
-# Portfolio App
-
